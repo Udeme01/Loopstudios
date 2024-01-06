@@ -18,12 +18,14 @@
 
 /* Typography */
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Josefin Sans, sans-serif';
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
   text-transform: uppercase;
 }
 
 p {
   font-family: 'Alata', sans-serif;
+  /* font-weight: 400; */
   font-size: 15px;
 }
 
@@ -33,6 +35,34 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  padding: 15px 25px;
+}
+
+/* navivgation */
+nav ul {
+  list-style-type: none;
+}
+
+button {
+  background: transparent;
+  outline: none;
+  border: none;
+  color: var(--white);
+  font-family: 'Alata', sans-serif;
+}
+
+/* hamburger menu-btn */
+.menu-btn {
+  padding: 20px;
+}
+
+.menu-btn .bar {
+  width: 35px;
+  height: 3px;
+  background-color: var(--white);
+  margin: 0 0 5px;
+  border-radius: 20px;
 }
 
 /* ShowCase */
@@ -42,4 +72,23 @@ p {
   background-size: cover;
   background-position: center;
   height: 700px;
+}
+
+.showcase .overlay {
+  display: flex;
+  align-items: center;
+  height: 700px;
+  padding: 0 20px;
+}
+
+.showcase .overlay h1 {
+  color: var(--white);
+  font-size: 50px;
+  border: 2px solid var(--white);
+  padding: 20px;
+  line-height: 1.05;
+}
+
+.showcase .overlay h1 .deliver {
+  display: block;
 }
