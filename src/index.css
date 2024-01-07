@@ -21,12 +21,20 @@ h1,h2,h3,h4,h5,h6 {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
   text-transform: uppercase;
+  color: var(--very-dark-gray);
 }
 
 p {
   font-family: 'Alata', sans-serif;
-  /* font-weight: 400; */
+  font-weight: 400;
   font-size: 15px;
+  color: var(--dark-gray);
+}
+
+img {
+  /* display: block; */
+  width: 100%;
+  /* margin: 0 auto; */
 }
 
 /* header container element */
@@ -40,6 +48,10 @@ p {
 }
 
 /* navivgation */
+nav {
+  display: none;
+}
+
 nav ul {
   list-style-type: none;
 }
@@ -63,6 +75,7 @@ button {
   background-color: var(--white);
   margin: 0 0 5px;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 /* ShowCase */
@@ -77,8 +90,11 @@ button {
 .showcase .overlay {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 700px;
-  padding: 0 20px;
+  width: 90%;
+  margin: 0 auto;
+  /* padding: 0 25px; */
 }
 
 .showcase .overlay h1 {
@@ -91,4 +107,53 @@ button {
 
 .showcase .overlay h1 .deliver {
   display: block;
+}
+
+/* interactive VR */
+
+.interactive {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.interactive .interactive-text {
+  padding: 0 5.5rem;
+}
+
+.interactive .interactive-text h2 {
+  letter-spacing: 1px;
+  font-size: 1.95rem;
+  padding: 3rem 0 1.2rem;
+}
+
+.interactive .interactive-text p {
+  line-height: 1.6;
+}
+
+/* Creations Mobile */
+.creation-mobile h2 {
+  text-align: center;
+  padding-bottom: 35px;
+}
+
+.creation-mobile section {
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 15px;
+}
+
+.creation-mobile article {
+  position: relative;
+}
+
+.creation-mobile h3 {
+  position: absolute;
+  top: 60%;
+  left: 20px;
+  color: var(--white);
+  padding: .25rem .5rem;
+  width: 120px;
+  font-size: 20px;
+  /* border: 2px solid; */
 }
