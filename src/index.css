@@ -132,6 +132,10 @@ button {
 }
 
 /* Creations Mobile */
+.creation-mobile {
+  margin-bottom: 20px;
+}
+
 .creation-mobile h2 {
   text-align: center;
   padding-bottom: 35px;
@@ -158,4 +162,28 @@ button {
   width: 120px;
   font-size: 20px;
   /* border: 2px solid; */
+}
+
+.creation-mobile .btn-container {
+  text-align: center;
+  margin: 20px 20px 0;
+  padding: 10px 0;
+}
+
+.creation-mobile .btn-container .btn {
+  border: 2px solid var(--black);
+  padding: 10px 50px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: 'Alata', sans-serif;
+  letter-spacing: 1.5px;
+  color: var(--black);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.creation-mobile .btn-container .btn:hover,
+.creation-mobile .btn-container .btn:focus {
+  background-color: var(--black);
+  color: var(--white);
 }
