@@ -166,7 +166,7 @@ button {
 
 .creation-mobile .btn-container {
   text-align: center;
-  margin: 20px 20px 0;
+  margin: 20px 20px 100px;
   padding: 10px 0;
 }
 
@@ -186,4 +186,57 @@ button {
 .creation-mobile .btn-container .btn:focus {
   background-color: var(--black);
   color: var(--white);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 3rem 3.5rem;
+  text-align: center;
+  font-family: 'Alata', sans-serif;
+}
+
+.footer div .logo img {
+  width: 10rem;
+  margin-bottom: 20px;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer-links li {
+  /* border: 1px solid red; */
+  margin: 1rem 0;
+  appearance: none;
+  padding: .25rem 0;
+}
+
+.footer-links li button {
+  font-size: .95rem;
+}
+
+.footer-icons {
+  margin-top: 2.5rem;
+}
+
+.footer-icons ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icons ul li {
+  font-size: 1.7rem;
+  margin-left: 1rem;
+}
+
+.footer-icons ul li:nth-of-type(1) {
+  margin-left: 0;
+}
+
+.footer-icons .copyright p {
+  margin-top: .5rem;
+  font-size: 1rem;
 }
