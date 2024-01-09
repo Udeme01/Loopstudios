@@ -1,12 +1,19 @@
 import React from "react";
 import interactiveImg from "../images/mobile/image-interactive.jpg";
+import interactiveDesktopImg from "../images/desktop/image-interactive.jpg";
 
 const Interactive = () => {
   return (
     <>
       <section className="interactive">
         <div>
-          <img src={interactiveImg} alt="interactive VR" />
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcSet={interactiveDesktopImg}
+            />
+            <img src={interactiveImg} alt="interactive VR" />
+          </picture>
         </div>
         <div className="interactive-text">
           <h2> The leader in interactive VR</h2>

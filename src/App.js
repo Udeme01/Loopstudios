@@ -4,6 +4,7 @@ import Showcase from './components/Showcase';
 import Interactive from './components/Interactive';
 import Creations from './components/Creations';
 import Footer from './components/Footer';
+import CreationsDesktop from './components/CreationsDesktop';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Showcase />
       <Interactive />
       <Creations />
+      <CreationsDesktop />
       <Footer />
     </>
   );
