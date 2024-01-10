@@ -6,9 +6,9 @@ const Interactive = () => {
   return (
     <>
       <section className="interactive">
-        <div>
+        <div className="interactiveImg">
           <picture>
-            <source
+            <source className="sourceImg"
               media="(min-width: 1024px)"
               srcSet={interactiveDesktopImg}
             />

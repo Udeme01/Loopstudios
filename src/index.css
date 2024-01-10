@@ -168,6 +168,80 @@ button {
   font-size: 1rem;
 }
 
+/* Interactive Media Query "1024px" */
+@media (min-width: 1024px) {
+  .interactive {
+    padding: 50px 20px;
+    text-align: center;
+
+    /* desktop style */
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .interactive .interactiveImg {
+    position: relative;
+    left: 17%;
+  }
+
+  .interactive .interactive-text {
+    /* desktop style */
+    padding: 20px 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    position: absolute;
+    top: 75%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    text-align: left;
+  }
+}
+
+/* Interactive Media Query "1400px" */
+@media (min-width: 1400px) {
+  .interactive .interactive-text {
+    padding: 70px 95px;
+    top: 80%;
+    left: 70%;
+    width: 55%;
+  }
+
+  .interactive .interactive-text h2 {
+    font-size: 2.8rem;
+  }
+
+  .interactive .interactive-text p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Interactive Media Query "1700px" */
+@media (min-width: 1700px) {
+  .interactive .interactive-text {
+    padding: 70px 95px;
+    top: 85%;
+    left: 70%;
+    width: 50%;
+  }
+
+  .interactive .interactive-text h2 {
+    font-size: 4rem;
+  }
+
+  .interactive .interactive-text p {
+    font-size: 1.7rem;
+  }
+}
+
 /* Creations Mobile */
 .creation-mobile {
   margin-bottom: 20px;
@@ -248,6 +322,7 @@ button {
     justify-content: space-between;
     width: 100%;
     margin: 50px 0;
+    margin-top: 150px;
   }
 
   .creation-desktop .title h2 {
@@ -364,9 +439,8 @@ button {
   font-size: 0.9rem;
 }
 
-
 /* Footer Media Query */
-@media(min-width: 1024px) {
+@media (min-width: 1024px) {
   .footer {
     text-align: initial;
     display: flex;
@@ -380,8 +454,8 @@ button {
 
   .footer .footer-links li {
     margin: 0;
-    margin-left: .25rem;
-    padding: .1rem 1rem;
+    margin-left: 0.25rem;
+    padding: 0.1rem 1rem;
     /* border: 1px solid red; */
   }
   .footer .footer-links li:nth-of-type(1) {
@@ -406,7 +480,7 @@ button {
     align-items: center;
     justify-content: flex-end;
   }
-  
+
   .footer-icons ul li {
     cursor: pointer;
   }
@@ -414,13 +488,13 @@ button {
   .footer-icons ul li:hover {
     border-bottom: 2px solid var(--white);
   }
-  
+
   .footer-icons ul li:nth-of-type(1) {
     margin-left: 0;
   }
-  
+
   .footer-icons .copyright p {
     margin-top: 1rem;
-    font-size: .95rem;
+    font-size: 0.95rem;
   }
 }
