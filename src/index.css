@@ -62,18 +62,46 @@ img {
 /* navivgation */
 nav {
   display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--black);
+  min-height: 100vh;
+}
+
+nav.active {
+  display: block;
+}
+
+nav .logo {
+  margin: 22px 5%;
 }
 
 nav ul {
   list-style-type: none;
+  margin-top: 34%;
+  margin-left: 5%;
+}
+
+nav ul li {
+  margin-bottom: 2rem;
 }
 
 button {
-  background: transparent;
+  background-color: transparent;
   outline: none;
   border: none;
   color: var(--white);
   font-family: "Alata", sans-serif;
+}
+
+nav ul li button {
+  cursor: pointer;
+  font-size: 2rem;
+  font-family: 'Josefin sans', sans-serif;
+  text-transform: uppercase;
 }
 
 /* hamburger menu-btn */
@@ -88,6 +116,18 @@ button {
   margin: 0 0 5px;
   border-radius: 20px;
   cursor: pointer;
+}
+
+/* hamburger menu-btn rotate */
+.menu-btn.rotate .bar-1 {
+  transform: rotate(45deg);
+}
+.menu-btn.rotate .bar-2 {
+  display: none;
+}
+.menu-btn.rotate .bar-3 {
+  transform: rotate(-45deg);
+  margin-top: -8px;
 }
 
 /* ShowCase */
