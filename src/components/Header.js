@@ -26,19 +26,34 @@ const Header = () => {
           </div>
           <ul>
             <li>
-              <button>About</button>
+              <button>
+                About
+                <div className="line"></div>
+              </button>
             </li>
             <li>
-              <button>Careers</button>
+              <button>
+                Careers
+                <div className="line"></div>
+              </button>
             </li>
             <li>
-              <button>Events</button>
+              <button>
+                Events
+                <div className="line"></div>
+              </button>
             </li>
             <li>
-              <button>Products</button>
+              <button>
+                Products
+                <div className="line"></div>
+              </button>
             </li>
             <li>
-              <button>Support</button>
+              <button>
+                Support
+                <div className="line"></div>
+              </button>
             </li>
           </ul>
         </nav>
