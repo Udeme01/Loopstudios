@@ -446,7 +446,6 @@ nav ul li button {
     letter-spacing: 1.5px;
     color: var(--black);
     cursor: pointer;
-    transition: background-color 0.2s;
   }
 
   .creation-desktop .btn-container .btn:hover,
@@ -575,10 +574,6 @@ nav ul li button {
     cursor: pointer;
   }
 
-  .footer .footer-links li button:hover {
-    border-bottom: 2px solid var(--white);
-  }
-
   .footer-icons {
     margin: 0;
   }
@@ -593,8 +588,18 @@ nav ul li button {
     cursor: pointer;
   }
 
-  .footer-icons ul li:hover {
-    border-bottom: 2px solid var(--white);
+  .footer .footer-links li button .line,
+  .footer-icons ul li .line {
+    background-color: var(--white);
+    width: 0;
+    height: 2px;
+    margin-top: 2px;
+    transition: width 0.3s;
+  }
+
+  .footer .footer-links li button:hover .line,
+  .footer-icons ul li:hover .line {
+    width: 100%;
   }
 
   .footer-icons ul li:nth-of-type(1) {
