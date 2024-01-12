@@ -1,15 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../images/logo.svg";
 
 const Header = () => {
-  const showNav = () => {
-    const navBar = document.querySelector("nav");
-    const menuBtn = document.querySelector(".menu-btn");
-    menuBtn.addEventListener("click", () => {
-      navBar.classList.toggle("active");
-      menuBtn.classList.toggle("rotate");
-    });
+  const [navbarOpen, setNavbarOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setNavbarOpen(!navbarOpen);
   };
+
   return (
     <>
       {/* header container element */}
@@ -20,7 +18,7 @@ const Header = () => {
         </div>
 
         {/* Mobile Navigation Menu */}
-        <nav>
+        <nav className={`${navbarOpen ? "active" : null}`}>
           <div className="logo">
             <img src={logo} alt="Loopstudios" />
           </div>
@@ -59,14 +57,15 @@ const Header = () => {
         </nav>
 
         {/* hamburger menu btn */}
-        <div className="menu-btn" onClick={() => showNav()}>
+        <button className={`menu-btn ${onclick = toggleNavbar} ${navbarOpen ? "rotate" : null}`}>
           <div className="bar bar-1"></div>
           <div className="bar bar-2"></div>
           <div className="bar bar-3"></div>
-        </div>
+        </button>
       </header>
     </>
   );
 };
 
 export default Header;
+
