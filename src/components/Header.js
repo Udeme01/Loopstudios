@@ -18,7 +18,7 @@ const Header = () => {
         </div>
 
         {/* Mobile Navigation Menu */}
-        <nav className={`${navbarOpen ? "active" : null}`}>
+        <nav className={`${navbarOpen ? "active" : ''}`}>
           <div className="logo">
             <img src={logo} alt="Loopstudios" />
           </div>
@@ -57,7 +57,7 @@ const Header = () => {
         </nav>
 
         {/* hamburger menu btn */}
-        <button className={`menu-btn ${onclick = toggleNavbar} ${navbarOpen ? "rotate" : null}`}>
+        <button className='menu-btn' onClick={toggleNavbar}>
           <div className="bar bar-1"></div>
           <div className="bar bar-2"></div>
           <div className="bar bar-3"></div>
