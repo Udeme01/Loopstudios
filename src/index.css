@@ -426,7 +426,7 @@ nav ul li button {
   color: var(--white);
 }
 
-/* Creation Destop Media Query */
+/* Creation Desktop Media Query */
 @media (min-width: 1024px) {
   .creation-mobile {
     display: none;
@@ -479,7 +479,7 @@ nav ul li button {
     position: relative;
   }
 
-  .creation-desktop section article:hover {
+  .creation-desktop section article:hover img {
     opacity: 0.5;
     cursor: pointer;
   }
@@ -501,6 +501,10 @@ nav ul li button {
 
   .creation-desktop section article:nth-of-type(4) h3 {
     width: 150px;
+  }
+
+  .creation-desktop section article:hover h3 {
+    color: var(--black);
   }
 }
 
