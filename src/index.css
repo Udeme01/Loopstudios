@@ -71,6 +71,7 @@ img {
 
 nav.active {
   display: block;
+  position: fixed;
 }
 
 nav .logo {
@@ -123,6 +124,10 @@ nav ul li button {
 }
 
 /* hamburger menu-btn rotate */
+.menu-btn.rotate {
+  position: fixed;
+  right: 20px;
+}
 .menu-btn.rotate .bar-1 {
   transform: rotate(45deg);
   margin-top: -7px;
