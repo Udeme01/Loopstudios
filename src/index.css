@@ -125,13 +125,14 @@ nav ul li button {
 /* hamburger menu-btn rotate */
 .menu-btn.rotate .bar-1 {
   transform: rotate(45deg);
+  margin-top: -7px;
 }
 .menu-btn.rotate .bar-2 {
   display: none;
 }
 .menu-btn.rotate .bar-3 {
   transform: rotate(-45deg);
-  margin-top: -8px;
+  margin-bottom: 5px;
 }
 
 /* Header - Nav Media Query */
@@ -141,11 +142,9 @@ nav ul li button {
     justify-content: flex-start;
     padding: 0;
     margin: 0;
-    /* border: 5px solid; */
   }
 
   .header .logo {
-    /* border: 1px solid red; */
     padding: 16px 0;
     padding-top: 70px;
     margin-left: 115px;
@@ -156,8 +155,6 @@ nav ul li button {
     display: block;
     background: transparent;
     min-height: 0;
-    /* border: 3px solid orange; */
-    /* width: 50%; */
   }
 
   nav.active {
@@ -174,7 +171,6 @@ nav ul li button {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    /* border: 2px solid yellow; */
     padding: 19px 0;
     margin-top: 50px;
     margin-right: 110px;
@@ -183,7 +179,6 @@ nav ul li button {
   nav ul li {
     margin-bottom: 0;
     margin-right: 40px;
-    /* border: 1px solid red; */
   }
 
   nav ul li:nth-of-type(5) {
@@ -228,7 +223,6 @@ nav ul li button {
   align-items: center;
   justify-content: center;
   height: 700px;
-  /* width: 80%; */
   padding: 20px;
   margin: 0 auto;
 }
@@ -401,7 +395,6 @@ nav ul li button {
   padding: 0.25rem 0.5rem;
   width: 120px;
   font-size: 20px;
-  /* border: 2px solid; */
 }
 
 .creation-mobile .btn-container {
@@ -437,7 +430,6 @@ nav ul li button {
   .creation-desktop {
     display: block;
     padding: 30px 120px;
-    /* border: 2px solid green; */
   }
 
   .creation-desktop .title {
@@ -476,12 +468,10 @@ nav ul li button {
     gap: 20px;
     max-width: 100%;
     margin: auto;
-    /* border: 3px solid green; */
   }
 
   .creation-desktop section article {
     position: relative;
-    /* border: 2px solid red; */
   }
 
   .creation-desktop section article:hover {
@@ -528,7 +518,6 @@ nav ul li button {
 }
 
 .footer-links li {
-  /* border: 1px solid red; */
   margin: 1rem 0;
   appearance: none;
   padding: 0.25rem 0;
@@ -579,7 +568,6 @@ nav ul li button {
     margin: 0;
     margin-left: 0.25rem;
     padding: 0.1rem 1rem;
-    /* border: 1px solid red; */
   }
   .footer .footer-links li:nth-of-type(1) {
     margin-left: 0;
